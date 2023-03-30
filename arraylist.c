@@ -28,10 +28,12 @@ void append(ArrayList * list, void * data){
   if (list->size == list->capacity){
     list->data = (void**)realloc(list->data, (list->capacity * (sizeof(void*))));
     if (list->data == NULL)return;
+    list->capacity *= 2;
   }
-  list->capacity *= 2;
+  list->data[list->size] = data;
+  list->size++;
 }
-list->data[list->size] = data;
+
 
 void push(ArrayList * list, void * data, int i){
 
