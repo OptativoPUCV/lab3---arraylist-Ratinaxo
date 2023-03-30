@@ -24,27 +24,32 @@ ArrayList *createList(void) {
   return list;
 }
 
-void append(ArrayList * l, void * data){
+void append(ArrayList * list, void * data){
+  if (list->size == list->capacity){
+    list->data = (void**)realloc(list->data, (list->capacity * (sizeof(void*))));
+    if (list->data == NULL)return;
+  }
+  list->capacity *= 2;
+}
+list->data[list->size] = data;
+
+void push(ArrayList * list, void * data, int i){
 
 }
 
-void push(ArrayList * l, void * data, int i){
-
-}
-
-void* pop(ArrayList * l, int i){
+void* pop(ArrayList * list, int i){
     return NULL;
 }
 
-void* get(ArrayList * l, int i){
+void* get(ArrayList * list, int i){
     return NULL;
 }
 
-int get_size(ArrayList * l){
-    return l->size;
+int get_size(ArrayList * list){
+    return list->size;
 }
 
 //remove elements
-void clean(ArrayList * l){
+void clean(ArrayList * list){
     
 }
