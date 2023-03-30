@@ -13,7 +13,7 @@ typedef struct ArrayList {
 ArrayList *createList(void) {
   ArrayList *list = (ArrayList*) malloc(sizeof(ArrayList));
   
-    return NULL;
+    return list;
 }
 
 void append(ArrayList * l, void * data){
