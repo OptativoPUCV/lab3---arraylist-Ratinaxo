@@ -15,7 +15,12 @@ ArrayList *createList(void) {
   if (list == NULL) return NULL;
 
   list->data = (void**) malloc(sizeof(void*));
-  
+  if (list->data == NULL){
+    free(list);
+    return NULL;
+  }
+  list->capacity = 2;
+  list->size = 0;
   return list;
 }
 
