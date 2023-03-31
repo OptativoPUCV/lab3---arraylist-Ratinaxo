@@ -27,16 +27,25 @@ ArrayList *createList(void) {
 void append(ArrayList * list, void * data){
   if (list->size == list->capacity){
     list->data = (void**)realloc(list->data, (list->capacity * (sizeof(void*))));
+    
     if (list->data == NULL)return;
     list->capacity *= 2;
   }
+  
   list->data[list->size] = data;
   list->size++;
 }
 
 
 void push(ArrayList * list, void * data, int i){
-
+  if (list->size == list->capacity){
+    list->data = (void**)realloc(list->data, (2 * list->capacity) * sizeof(void*))
+      if (list->data == NULL) return;
+    list->capacity *= 2;
+  }
+  void *aux = data;
+  list->data[list->size] = aux;
+  list->size++;
 }
 
 void* pop(ArrayList * list, int i){
