@@ -65,7 +65,8 @@ void* pop(ArrayList * list, int i){
 void* get(ArrayList * list, int i){
   if (i >= list->size)return NULL;
   if (i < 0)
-    i = list->size + i;
+    //i = list->size + i;
+    i = abs(i) + 1;
   return list->data[i];
 }
 
