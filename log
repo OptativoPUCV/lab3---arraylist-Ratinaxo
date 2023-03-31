@@ -186,3 +186,16 @@ Fri 31 Mar 2023 06:31:00 PM UTC:
  tests:  7|3
 total_score: 30/70
 334c80e
+Fri 31 Mar 2023 06:33:57 PM UTC: 
+ arraylist.c | 11 ++++-------
+ 1 file changed, 4 insertions(+), 7 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:70:23: error: expected ‘;’ before ‘}’ token
+   70 |   return list->data[i]
+      |                       ^
+      |                       ;
+   71 | }
+      | ~                      
+Compilation failed
+1782317
