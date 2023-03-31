@@ -257,3 +257,18 @@ Fri 31 Mar 2023 06:50:13 PM UTC:
  tests:  9|1
 total_score: 50/70
 43b7020
+Fri 31 Mar 2023 07:06:33 PM UTC: 
+ arraylist.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:60:21: error: ‘data’ undeclared (first use in this function); did you mean ‘dato’?
+   60 |     list->data[j] = data->[j+1];
+      |                     ^~~~
+      |                     dato
+arraylist.c:60:21: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:60:27: error: expected identifier before ‘[’ token
+   60 |     list->data[j] = data->[j+1];
+      |                           ^
+Compilation failed
+6c96a9d
