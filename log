@@ -65,3 +65,9 @@ arraylist.c:42:83: error: expected ‘;’ before ‘if’
       |       ~~                                                                           
 Compilation failed
 0d30f68
+Fri 31 Mar 2023 12:42:38 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 20/70
+a0980e0

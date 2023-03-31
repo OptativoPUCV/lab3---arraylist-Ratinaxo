@@ -39,7 +39,7 @@ void append(ArrayList * list, void * data){
 
 void push(ArrayList * list, void * data, int i){
   if (list->size == list->capacity){
-    list->data = (void**)realloc(list->data, (2 * list->capacity) * sizeof(void*))
+    list->data = (void**)realloc(list->data, (2 * list->capacity) * sizeof(void*));
       if (list->data == NULL) return;
     list->capacity *= 2;
   }
