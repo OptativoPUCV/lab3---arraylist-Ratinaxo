@@ -51,7 +51,7 @@ void push(ArrayList * list, void * data, int i){
 }
 
 void* pop(ArrayList * list, int i){
-  int aux;
+  int aux = i;
   if (i < 0)
      aux = abs(i) - 1; 
   for (int j = aux; j < list->size; j++){
