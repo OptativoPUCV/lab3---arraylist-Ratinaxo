@@ -272,3 +272,9 @@ arraylist.c:60:27: error: expected identifier before ‘[’ token
       |                           ^
 Compilation failed
 6c96a9d
+Fri 31 Mar 2023 07:07:07 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|1
+total_score: 50/70
+659c687
