@@ -67,7 +67,7 @@ void* get(ArrayList * list, int i){
   if (i >= list->size || i < -list->size)return NULL;
   if (i < 0)
     i = list->size + 1;
-  return list->data[i]
+  return list->data[i];
 }
 
 int get_size(ArrayList * list){
