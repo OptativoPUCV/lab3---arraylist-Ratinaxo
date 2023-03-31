@@ -54,10 +54,16 @@ void* pop(ArrayList * list, int i){
   if (i < 0)
     i = list->size + 1;
   if (i >= list->size || i < 0)return NULL;
+  
   void *dato = list->data[i];
   for (int j = i; j < list->size - 1; j++)
     list->data[j] = list->data[j+1];
   list->size--;
+  if (list->size < list->capacity/4) {
+    list->capacity /= 2;
+    list->data = realloc(list->data, list->capacity * sizeof(void*));
+    list->size = list->capacity / 2;
+  }
   return dato;
 }
 
