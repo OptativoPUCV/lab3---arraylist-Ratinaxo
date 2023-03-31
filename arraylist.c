@@ -51,10 +51,9 @@ void push(ArrayList * list, void * data, int i){
 }
 
 void* pop(ArrayList * list, int i){
-  if (i >= list->size) return NULL;
-  if (list->size == list->capacity){
-    
-  }
+  if (i < 0)
+     i = abs(i) - 1; 
+  
   return NULL;
 }
 
