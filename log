@@ -165,3 +165,18 @@ Fri 31 Mar 2023 06:30:15 PM UTC:
  tests:  7|3
 total_score: 30/70
 370e535
+Fri 31 Mar 2023 06:30:34 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:72:23: error: ‘aux’ undeclared (first use in this function)
+   72 |     return list->data[aux];
+      |                       ^~~
+arraylist.c:72:23: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:73:1: error: control reaches end of non-void function [-Werror=return-type]
+   73 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a5b7dcd
