@@ -68,7 +68,7 @@ int get_size(ArrayList * list){
 //remove elements
 void clean(ArrayList * list){
   list->size = 0;
-  list->capacity = 0;
+  list->capacity = 2;
   free(list->data);
   free(list);
   return;
