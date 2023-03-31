@@ -64,8 +64,9 @@ void* pop(ArrayList * list, int i){
 }
 
 void* get(ArrayList * list, int i){
+  int aux = i;
   if (i < 0){
-    int aux = abs(i) - 1;
+    aux = abs(i) - 1;
     return list->data[aux];
   }
   else
