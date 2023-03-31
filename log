@@ -107,3 +107,14 @@ Fri 31 Mar 2023 03:33:59 AM UTC:
  tests:  5|3
 total_score: 30/70
 6169973
+Fri 31 Mar 2023 03:39:53 AM UTC: 
+ arraylist.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:54:7: error: ‘aux’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   54 |   int aux;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+c3767bf
